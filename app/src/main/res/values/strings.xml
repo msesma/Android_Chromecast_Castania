@@ -6,4 +6,5 @@
     <string name="select_media_video">Select video</string>
     <string name="off">Server off</string>
     <string name="on">Server on</string>
+    <string name="app_id">4A687DE9</string>
 </resources>

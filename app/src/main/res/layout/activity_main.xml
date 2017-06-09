@@ -3,11 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF"
     android:orientation="vertical"
     android:padding="8dp"
-    tools:context=".MainActivity" >
-
+    tools:context=".MainActivity"
+    >
+    <android.support.v7.app.MediaRouteButton
+        android:id="@+id/media_route_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:mediaRouteTypes="user"
+        tools:visibility="visible"
+        android:visibility="gone" />
     <Button
         android:id="@+id/bt_light"
         android:layout_width="30dp"
@@ -41,45 +50,5 @@
         android:layout_margin="10dp"
         android:onClick="onSelectButtonClick"
         android:text="@string/select_media_video" />
-
-    <LinearLayout
-        android:id="@+id/ll_media_buttons"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_margin="10dp"
-        android:orientation="horizontal" >
-
-        <ImageButton
-            android:id="@+id/bt_stop"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="onClickStop"
-            android:src="@drawable/stop" />
-
-        <ImageButton
-            android:id="@+id/bt_frw"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="onClickFrw"
-            android:src="@drawable/frw" />
-
-        <ImageButton
-            android:id="@+id/bt_play"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="onClickPlay"
-            android:src="@drawable/play" />
-
-        <ImageButton
-            android:id="@+id/bt_ffw"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:onClick="onClickFfw"
-            android:src="@drawable/ffw" />
-    </LinearLayout>
 
 </LinearLayout>
